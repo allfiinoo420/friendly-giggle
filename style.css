@@ -1,0 +1,198 @@
+.fw-bolder {
+	color: rgb(7, 255, 110);
+}
+.bg-light {
+	color: aqua !important;
+}
+.body {
+	background: #e2d1d1 !important;
+	font-family: ;
+	background: linear-gradient(to right, #4facfe, #00f2fe) !important;
+
+}
+@font-face {
+	font-family: 'Varsity';
+	src: url('font/docktrin.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.title-varsity {
+	font-family: 'Varsity', sans-serif;
+	font-size: 48px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.judul {
+	text-align: center;
+}
+.video-container {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+.bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.video-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-shadow: 2px 2px 5px #000;
+	background-color: rgba(0, 0, 0, 0.3); /* opsional untuk gelapkan */
+}
+.uael_btn__blink {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+.btn {
+	border-color: black;
+	color: rgb(0, 0, 0);
+	background: #fffab8;
+}
+.navbar {
+	background-color: rgb(255, 255, 255) !important;\
+	
+}
+.daftar{
+	text-align: center !important;
+	padding: auto;
+	padding-left: 20%;
+	padding-top: 10px;
+}
+.container {
+	padding-top: 50px;
+}
+/* Animasi tombol */
+.btn-animated {
+  animation: muncul 1s ease-in-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes muncul {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efek navbar saat scroll */
+.navbar.scrolled {
+  background-color: #343a40 !important;
+  transition: background-color 0.3s;
+}
+
+/* Efek ketik otomatis */
+.typing-cursor {
+  border-right: 2px solid orange;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+.btn:hover {
+  background-color: #ff6600;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+<style>
+/* VIDEO TRANSPARAN */
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: brightness(0.4); /* semi-transparan */
+  object-fit: cover;
+  z-index: 1;
+}
+.video-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Efek Tombol */
+.btn {
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: #ff7e00;
+  color: white;
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #e66800;
+}
+
+/* Efek ketik otomatis */
+.typing-cursor {
+  border-right: 2px solid orange;
+  animation: blink 0.7s steps(1) infinite;
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Navbar scroll effect */
+.navbar.scrolled {
+  background-color: rgba(33, 33, 33, 0.9) !important;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive overlay text */
+.judul {
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 90%;
+}
+
+@media (min-width: 768px) {
+  .judul {
+    font-size: 3rem;
+  }
+}
+</style>
